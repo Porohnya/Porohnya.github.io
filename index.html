@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!— комментарий в HTML —>
+<!— в первой строке мы сообщаем браузеру,
+что это документ HTML5 —>
+
+<html lang="ru">
+
+<head>
+    <title>Название страницы</title>
+</head>
+
+<body>
+    <ol id="sait">
+        <li><a href="//www.example.com">1</a></li>
+        <li><a href="https://example.com">2</a></li>
+        <li><a href="ftp://example.com/dogs">3</a></li>
+        <li><a href="ftp://Daniil.example.com/dogs">4</a></li>
+        <li><a href="https://dota.com/ru/friends/">5</a></li>
+        <li><a href="#sait">6</a></li>
+        <li><a href="https://example.com">7</a></li>
+        <li><a href="https://example.com" title="main">8</a></li>
+        <li><a href="https://example.com" title="friends">8</a></li>
+        <li><a> (9 pause)</a></li>
+        <li><a href="">10</a></li>
+        <li><a href="https://example.com" rel="nofollow">11</a></li>
+        <li><a href="https://example.com" rel="nofollow index">12</a></li>
+        <li><p> Click <a href="https://example.com">13</a></p></li>
+        <li><a href="http://example.com/" title="img.jpg" target="_blank"><img src="2.jpg" width="100" height="111"> </a></li>
+        <li>
+            <img src="1.jpg" width="100" height="111" usemap="#image-map">
+            <map name="image-map">
+                <area target="_blank" alt="" title="" href="" coords="" shape="rect">
+            </map>
+        <li>
+            <map name="image-map">
+                <area alt="Music" href="https://example.com" coords="0,163,5,3,250,96" shape="poly" />16
+                <area alt="fam" href="https://example.com" coords="130,224,90" shape="circle" />
+            </map>
+        </li>
+        <li><a href="./main.html">17</a></li>
+        <li><a href="./about/main.html">18</a></li>
+        <li><a href="../contacts">19</a></li>
+        <li><a href="../../contacts">20</a></li>
+        <li><a href="/">21</a></li>
+        <li><a href="/main.html"></a></li>
+    </ol>
+    <form id="example" method="post" action="/">
+        <label> <input type="text" placeholder="Name" /><br /> </label>
+        <label><input type="email" placeholder="email" /><br /></label>
+        <label><input type="date" /> <br /> </label>
+        <label><input type="radio" name="pol" value="male" />Мужской </label>
+        <label><input type="radio" name="pol" value="female" />Женский</label>
+        <br />
+        <label>
+            Количество конечностей
+            <input type="radio" name="ar" value="1" />
+        </label>
+        <label><input type="radio" name="ar" value="2" /></label>
+        <label><input type="radio" name="ar" value="3" /></label>
+        <label><input type="radio" name="ar" value="more" /></label>
+        <br />
+        <label>
+            Сверхспособность<br /><select name="arg[]" multiple="multiple">
+                <option value="god">Бессмертие</option>
+                <option value="wall">Прохождение сквозь стены</option>
+                <option value="fly">Левитация</option>
+            </select>
+        </label><br />
+        <label>Биография <textarea name="about"></textarea></label><br />
+        <label><input type="checkbox" />Cо списком ознакомлен</label><br />
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
